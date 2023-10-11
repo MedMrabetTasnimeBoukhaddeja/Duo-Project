@@ -1,0 +1,19 @@
+
+body{
+    background-image: url("https://www.england.nhs.uk/wp-content/uploads/2019/01/clinical-pharmacist.jpg");
+    background-size: cover;
+    background-color: antiquewhite;
+}
+
+#head{
+    border: solid;
+    border-radius: 2% black;
+    height: 5cm;
+}
+#head h4{
+    margin-top: 1cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:red; 
+    font-style: italic;
+    font-size: 2cm;
+}
