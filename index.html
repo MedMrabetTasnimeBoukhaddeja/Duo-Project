@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <rel="stylesheet" href="indexe.css"></rel>
+    <title>Pharmacy</title>
+</head>
+<body>
+    <form action="formulaire"><fieldset>
+        <legend><h3>Formulaire</h3></legend>
+<div>
+    <i>e-mail</i> <input type="email" ><br> <br>    
+        
+    <p>Saved e-mail is:</p>
+    <p id="demo"></p>
+    <script>
+// Set Item
+    localStorage.setItem("e-mail", "tas@gmail.com");
+// Retrieve
+    document.getElementById("demo").innerHTML = localStorage.getItem("e-mail");
+   </script>
+</div>
+
+
+
+
+<i>password</i> <input type="password" ><br> <br>
+
+<br><a href="index2.html">Submit</a></br>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
