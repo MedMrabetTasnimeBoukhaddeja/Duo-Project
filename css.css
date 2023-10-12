@@ -1,0 +1,87 @@
+
+body{
+    background-image: url("https://miro.medium.com/v2/resize:fit:828/0*VgFm780LE6uH8VqY");
+    background-size: 100%;
+    background-color: antiquewhite;
+}
+
+#head{
+    border: solid;
+    border-radius: 2% black;
+    height: 5cm;
+}
+#head h4{
+    margin-top: 1cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:red; 
+    font-style: italic;
+    font-size: 2cm;
+}
+.list{
+    max-width: 100%;
+    width: 1500px;
+    margin: 150px auto 0 ;
+    border-radius: 10px;
+}
+.container{
+    padding: 20px;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: 32.66% 32.66% 32.66%;
+    row-gap: 10px;
+    background-color:transparent;
+}
+.product_container{
+    width: 350px;
+    height: 550px;
+    padding: 0.5cm;
+    border-radius: 15%;
+    border: solid black;
+    background-color:#b4ecd4;
+    box-shadow: 0 1px 3px black;
+}
+.imgs{
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_container .p1{
+    color:black;
+    letter-spacing: 1px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+}
+#button1{
+    margin-left: 2cm;
+    margin-top: -10cm;
+width: 50%;
+height: 10%;
+}
+#button1:hover{
+    color: red;
+}
+.down_bar{
+    margin-left: 35%;
+    padding: 15px;
+    text-align: center;
+    width: 600px;
+    height: 450px;
+    padding: 0.5cm;
+    border-radius: 15%;
+    border: solid black;
+    background-color:#b4ecd4;
+    box-shadow: 0 1px 3px black;
+   
+}
+.cart{
+    padding: 20px;
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns:20% 20% 20%;
+    row-gap: 10px;
+    background-color:transparent;
+}
