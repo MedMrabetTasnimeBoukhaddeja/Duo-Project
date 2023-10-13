@@ -46,20 +46,21 @@ function Product(id,name,image,price) {
 
 // some instance from the Product //
 
-var product1=Product(0,"Biberons",["/images/b1.jpg","/images/b3.jpg","/images/b2.jpg"],150)
-var product2=Product(1,"Balence",["/images/bala.jpg"],60)
-var product3=Product(2,"Chair",["/images/c1.jpg"],300)
-var product4=Product(3,"complement",["/images/comple.jpg"],90)
-var product5=Product(4,"Coupe Angle",["/images/coupe.jpg"],7)
-var product6=Product(5,"Sucette",["/images/s1.jpg","/images/s2.jpg","/images/s3.jpg"],40)
-var product7=Product(6,"Thermo-metre",["/images/t1.jpg","/images/t2.jpg","/images/t3.jpg"],10)
-var product8=Product(7,"Lecteur-glycemie",["/images/l1.jpg","/images/l12.jpg"],80)
-var product9=Product(8,"Face",["/images/e1.jpg","/images/e2.jpg"],170)
-var product10=Product(9,"Ponsement",["/images/p1.jpg"],3.500 )
+var product1=Product(0,"Feeding bottle",["/images/b1.jpg","/images/b3.jpg","/images/b2.jpg"],45)
+  var product2=Product(1,"Body scale",["/images/bala.jpg"],90)
+  var product3=Product(2,"wheelchair",["/images/c1.jpg"],370)
+  var product4=Product(3,"food supplement vitamins",["/images/comple.jpg"],90)
+  var product5=Product(4,"Nail clipper",["/images/coupe.jpg"],8)
+  var product6=Product(5,"Pacifier",["/images/s1.jpg","/images/s2.jpg","/images/s3.jpg"],33)
+  var product7=Product(6,"Thermometer",["/images/t1.jpg","/images/t2.jpg"],20)
+  var product8=Product(7,"Infared thermometer",["/images/t3.jpg"],200)
+  var product9=Product(8,"Glucometer",["/images/l1.jpg"],80)
+  var product10=Product(10,"Sun screen",["/images/e1.jpg","/images/e2.jpg"],170)
+  var product11=Product(11,"Foam plaster",["/images/p1.jpg"],3.500 )
 
 
 // we stored all the product in an array //
-var store=[product1,product2,product3,product4,product5,product6,product7,product8,product9,product10]
+var store=[product1,product2,product3,product4,product5,product6,product7,product8,product9,product10,product11]
 
 // we make function to display all the element in the array //
 
@@ -91,11 +92,9 @@ console.log($(".imgs"));
 
 function changeimg(item) {
   let counter = 0;
-  
+  console.log(item);
   function getnext() {
-    // console.log(item.length);
-    var item1=item
-    // console.log(item1);
+
     counter ++  
     counter=counter% item.length;
     return item[counter];
@@ -107,7 +106,6 @@ function changeimg(item) {
 // we do the for loop to get every single array of image //
 for(var i=0;i<$(".imgs").length;i++){
 console.log(store[i].image,i);
-console.log($(".imgs")[i])
 let imgs=$(".imgs")[i]
  let change = changeimg(store[i].image)
 
