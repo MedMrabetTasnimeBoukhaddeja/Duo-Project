@@ -39,10 +39,7 @@
           return acc; 
     }
     
-var desimages=[["/images/b3.jpg","/images/b2.jpg"],["/images/c2.jpg"],[,"/images/comple2.jpg"]]
-
-
-  // we use OOP to make some instance// 
+// we use OOP to make some instance// 
   function Product(id,name,image,price) {
       return{id,name,image,price}
   }
@@ -120,7 +117,7 @@ var desimages=[["/images/b3.jpg","/images/b2.jpg"],["/images/c2.jpg"],[,"/images
   }
  }
 // we declare an empty array for the cart //
-    // var cart = [];
+    var cart = [];
 // we declare a variable to count the price of the product //
     var total = 0;
 // we create a function using the index of the element to push the price and the image //
@@ -136,9 +133,11 @@ var desimages=[["/images/b3.jpg","/images/b2.jpg"],["/images/c2.jpg"],[,"/images
 // we declare a function to display the items add in the array cart //
     
     function displaycart(cart) {
-      var cart = []
-      for(let i=0;i<cart.length;i++){
-        let ele = cart[i]
+// here i apply the empty function to stop the repetition of the items in the cart // 
+      $(".cart").empty()
+// i use for loop to append the items in the cart //
+      for(var i=0;i<cart.length;i++){
+        var ele = cart[i]
         console.log('gfggfgffgfgf',ele)
 
             $(".cart").append(
@@ -159,9 +158,4 @@ function search() {
   })
   $(".container").empty()
   showAll(data)
-}
-
-// $("#button2").on("click",function () {
-//   cart.splice(0,1)
-// })
- // <button id="button2" value=${ele.id}>DELETE</button>//
+};
